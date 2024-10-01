@@ -65,6 +65,10 @@ echo "source ~/Workspace/active_inr_s_ws/devel/setup.bash" >> ~/.bashrc
 
 ## Run activeINR-S
 
+### Config Datasets Path
+
+Copy config template from `config/.templates/user_config.json` to `config/user_config.json` and modify the path to the dataset.
+
 ### Single Scene
 
 1. To run Active Neural Mapping on the `Denmark` scene of `Gibson` dataset, run the following command.
