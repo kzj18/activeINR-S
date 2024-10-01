@@ -1,0 +1,6 @@
+float64     center_x
+float64     center_y
+---
+bool[]      precise_map
+float64[]   precise_map_x
+float64[]   precise_map_y

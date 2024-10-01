@@ -1,0 +1,208 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Default Pablo",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
+            "arguments": [
+                "scene_id:=Pablo"
+            ]
+        },
+        {
+            "name": "Default Cantwell",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
+            "arguments": [
+                "scene_id:=Cantwell",
+                "step_num:=2000"
+            ]
+        },
+        {
+            "name": "Default Eastville",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
+            "arguments": [
+                "scene_id:=Eastville",
+                "step_num:=2000"
+            ]
+        },
+        {
+            "name": "Default gZ6f7yhEvPG",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
+            "arguments": [
+                "scene_id:=gZ6f7yhEvPG",
+                "config:=config/datasets/mp3d.json"
+            ]
+        },
+        {
+            "name": "Default pLe4wQe7qrG",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
+            "arguments": [
+                "scene_id:=pLe4wQe7qrG",
+                "config:=config/datasets/mp3d.json"
+            ]
+        },
+        {
+            "name": "Default pLe4wQe7qrG",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
+            "arguments": [
+                "scene_id:=pLe4wQe7qrG",
+                "config:=config/datasets/mp3d.json"
+            ]
+        },
+        {
+            "name": "Default q9vSo1VnCiC",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
+            "arguments": [
+                "scene_id:=q9vSo1VnCiC",
+                "config:=config/datasets/mp3d.json"
+            ]
+        },
+        {
+            "name": "Default Z6MFQCViBuw",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
+            "arguments": [
+                "scene_id:=Z6MFQCViBuw",
+                "config:=config/datasets/mp3d.json"
+            ]
+        },
+        {
+            "name": "Default Denmark",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch"
+        },
+        {
+            "name": "Default Denmark [hide_windows]",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
+            "arguments": [
+                "hide_planner_windows:=1",
+                "hide_mapper_windows:=1"
+            ]
+        },
+        {
+            "name": "Default Pablo",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
+            "arguments": [
+                "scene_id:=Pablo"
+            ]
+        },
+        {
+            "name": "Default zsNo4HB9uLZ",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
+            "arguments": [
+                "config:=config/datasets/mp3d.json"
+            ]
+        },
+        {
+            "name": "Default YmJkqBEsHnH",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
+            "arguments": [
+                "config:=config/datasets/mp3d.json",
+                "scene_id:=YmJkqBEsHnH"
+            ]
+        },
+        {
+            "name": "Default Denmark parallelized",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
+            "arguments": [
+                "parallelized:=1"
+            ]
+        },
+        {
+            "name": "Default Pablo parallelized",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
+            "arguments": [
+                "scene_id:=Pablo",
+                "parallelized:=1"
+            ]
+        },
+        {
+            "name": "Default zsNo4HB9uLZ parallelized",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
+            "arguments": [
+                "config:=config/datasets/mp3d.json",
+                "parallelized:=1"
+            ]
+        },
+        {
+            "name": "Default YmJkqBEsHnH parallelized",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
+            "arguments": [
+                "config:=config/datasets/mp3d.json",
+                "scene_id:=YmJkqBEsHnH",
+                "parallelized:=1"
+            ]
+        },
+        {
+            "name": "Default Denmark with ros dataloader",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
+            "arguments": [
+                "ros_dataloader:=1"
+            ]
+        },
+        {
+            "name": "Default Pablo with ros dataloader",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
+            "arguments": [
+                "scene_id:=Pablo",
+                "ros_dataloader:=1"
+            ]
+        },
+        {
+            "name": "Default zsNo4HB9uLZ with ros dataloader",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
+            "arguments": [
+                "config:=config/datasets/mp3d.json",
+                "ros_dataloader:=1"
+            ]
+        },
+        {
+            "name": "Default YmJkqBEsHnH with ros dataloader",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
+            "arguments": [
+                "config:=config/datasets/mp3d.json",
+                "scene_id:=YmJkqBEsHnH",
+                "ros_dataloader:=1"
+            ]
+        }
+    ]
+}

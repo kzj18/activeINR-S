@@ -1,0 +1,27 @@
+<launch>
+    <arg name="config" default="$(find active_inr_s)/config/datasets/gibson.json"/>
+    <arg name="scene_id" default="None"/>
+    <arg name="ros_dataloader" default="0"/>
+    <arg name="parallelized" default="0"/>
+
+    <arg name="gpu_id" default="0"/>
+    <arg name="user_config" default="$(find active_inr_s)/config/user_config.json"/>
+    <arg name="mode" default="AUTO_PLANNING"/>
+    <arg name="actions" default="None"/>
+    <arg name="hide_mapper_windows" default="0"/>
+    <arg name="hide_planner_windows" default="0"/>
+    <arg name="step_num" default="-1"/>
+
+    <param name="step_num" value="$(arg step_num)"/>
+
+    <node pkg="active_inr_s" name="configer_node" type="configer_node.py" output="screen" args="--launch habitat.launch --config $(arg config) --scene_id $(arg scene_id) --ros_dataloader $(arg ros_dataloader) --parallelized $(arg parallelized) --gpu_id $(arg gpu_id) --user_config $(arg user_config) --mode $(arg mode) --actions $(arg actions) --hide_mapper_windows $(arg hide_mapper_windows) --hide_planner_windows $(arg hide_planner_windows) --step_num $(arg step_num)"/>
+
+    <node pkg="active_inr_s" name="mapper_node" type="mapper_node.py" output="screen" args="--config $(arg config) --scene_id $(arg scene_id) --user_config $(arg user_config) --gpu_id $(arg gpu_id) --mode $(arg mode) --actions $(arg actions) --ros_dataloader $(arg ros_dataloader) --parallelized $(arg parallelized) --hide_windows $(arg hide_mapper_windows)"/>
+
+    <group if="$(arg ros_dataloader)">
+        <node pkg="active_inr_s" name="dataloader_node" type="dataloader_node.py" output="screen" args="--config $(arg config) --scene_id $(arg scene_id) --user_config $(arg user_config)"/>
+    </group>
+
+    <node pkg="active_inr_s" name="planner_node" type="planner_node.py" output="screen" args="--config $(arg config) --hide_windows $(arg hide_planner_windows)"/>
+
+</launch>

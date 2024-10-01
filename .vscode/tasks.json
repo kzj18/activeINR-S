@@ -1,0 +1,153 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+		{
+			"type": "shell",
+			"label": "Catkin Make quick [No PYTHON]",
+			"command": [
+				"cd ${workspaceFolder}/../..",
+                "&&",
+                "catkin_make"
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": true,
+				"clear": false
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"options": {
+				"shell": {
+					"executable": "/bin/bash",
+					"args": ["-ic"]
+				}
+			}
+		},
+		{
+			"type": "shell",
+			"label": "Catkin Make quick",
+			"command": [
+				"cd ${workspaceFolder}/../..",
+                "&&",
+                "catkin_make",
+                "-DPYTHON_EXECUTABLE=/usr/bin/python3"
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": true,
+				"clear": false
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"options": {
+				"shell": {
+					"executable": "/bin/bash",
+					"args": ["-ic"]
+				}
+			}
+		},
+        {
+			"type": "shell",
+			"label": "Catkin Make from zero",
+			"command": [
+				"cd ${workspaceFolder}/../..",
+                "&&",
+                "rm -r build devel",
+                ";",
+                "catkin_make",
+                "-DPYTHON_EXECUTABLE=/usr/bin/python3"
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": true,
+				"clear": false
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"options": {
+				"shell": {
+					"executable": "/bin/bash",
+					"args": ["-ic"]
+				}
+			}
+        },
+        {
+			"type": "shell",
+			"label": "Catkin Make from zero [No PYTHON]",
+			"command": [
+				"cd ${workspaceFolder}/../..",
+                "&&",
+                "rm -r build devel",
+                ";",
+                "catkin_make"
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": true,
+				"clear": false
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"options": {
+				"shell": {
+					"executable": "/bin/bash",
+					"args": ["-ic"]
+				}
+			}
+        },
+		{
+			"type": "shell",
+			"label": "Stubgen for Open3D",
+			"command": [
+				"mkdir -p ${workspaceFolder}/typings/open3d",
+				"&&",
+				"rm -r ${workspaceFolder}/typings/open3d",
+				"&&",
+				"conda activate activeINR_S",
+				"&&",
+				"pybind11-stubgen",
+				"-o",
+				"${workspaceFolder}/typings",
+				"open3d"
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": true,
+				"clear": false
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"options": {
+				"shell": {
+					"executable": "/bin/bash",
+					"args": ["-ic"]
+				}
+			}
+		}
+    ]
+}

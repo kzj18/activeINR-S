@@ -1,0 +1,11 @@
+bool                    arrived_flag
+---
+bool[]                  free_map
+bool[]                  visible_map
+geometry_msgs/Pose[]    targets_frustums
+uint32[]                clusters_n_triangles
+float64[]               clusters_area
+float64[]               clusters_uncertainty_max
+float64[]               clusters_uncertainty_mean
+geometry_msgs/Point     horizon_bound_min
+geometry_msgs/Point     horizon_bound_max
