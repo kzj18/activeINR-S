@@ -2,6 +2,22 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Default Denmark",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch"
+        },
+        {
+            "name": "Default Denmark [hide_windows]",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
+            "arguments": [
+                "hide_planner_windows:=1",
+                "hide_mapper_windows:=1"
+            ]
+        },
+        {
             "name": "Default Pablo",
             "type": "ros",
             "request": "launch",
@@ -31,13 +47,22 @@
             ]
         },
         {
+            "name": "Default YmJkqBEsHnH",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
+            "arguments": [
+                "config:=${workspaceFolder}/config/datasets/mp3d.json"
+            ]
+        },
+        {
             "name": "Default gZ6f7yhEvPG",
             "type": "ros",
             "request": "launch",
             "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
             "arguments": [
                 "scene_id:=gZ6f7yhEvPG",
-                "config:=config/datasets/mp3d.json"
+                "config:=${workspaceFolder}/config/datasets/mp3d.json"
             ]
         },
         {
@@ -47,17 +72,7 @@
             "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
             "arguments": [
                 "scene_id:=pLe4wQe7qrG",
-                "config:=config/datasets/mp3d.json"
-            ]
-        },
-        {
-            "name": "Default pLe4wQe7qrG",
-            "type": "ros",
-            "request": "launch",
-            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
-            "arguments": [
-                "scene_id:=pLe4wQe7qrG",
-                "config:=config/datasets/mp3d.json"
+                "config:=${workspaceFolder}/config/datasets/mp3d.json"
             ]
         },
         {
@@ -67,42 +82,21 @@
             "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
             "arguments": [
                 "scene_id:=q9vSo1VnCiC",
-                "config:=config/datasets/mp3d.json"
+                "config:=${workspaceFolder}/config/datasets/mp3d.json",
+                "step_num:=10000"
             ]
         },
         {
-            "name": "Default Z6MFQCViBuw",
+            "name": "Default Z6MFQCViBuw [hide_windows]",
             "type": "ros",
             "request": "launch",
             "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
             "arguments": [
                 "scene_id:=Z6MFQCViBuw",
-                "config:=config/datasets/mp3d.json"
-            ]
-        },
-        {
-            "name": "Default Denmark",
-            "type": "ros",
-            "request": "launch",
-            "target": "${workspaceFolder}/launch/entry_points/habitat.launch"
-        },
-        {
-            "name": "Default Denmark [hide_windows]",
-            "type": "ros",
-            "request": "launch",
-            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
-            "arguments": [
+                "config:=${workspaceFolder}/config/datasets/mp3d.json",
+                "step_num:=10000",
                 "hide_planner_windows:=1",
                 "hide_mapper_windows:=1"
-            ]
-        },
-        {
-            "name": "Default Pablo",
-            "type": "ros",
-            "request": "launch",
-            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
-            "arguments": [
-                "scene_id:=Pablo"
             ]
         },
         {
@@ -111,17 +105,9 @@
             "request": "launch",
             "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
             "arguments": [
-                "config:=config/datasets/mp3d.json"
-            ]
-        },
-        {
-            "name": "Default YmJkqBEsHnH",
-            "type": "ros",
-            "request": "launch",
-            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
-            "arguments": [
-                "config:=config/datasets/mp3d.json",
-                "scene_id:=YmJkqBEsHnH"
+                "config:=${workspaceFolder}/config/datasets/mp3d.json",
+                "scene_id:=zsNo4HB9uLZ",
+                "step_num:=10000"
             ]
         },
         {
@@ -144,24 +130,25 @@
             ]
         },
         {
-            "name": "Default zsNo4HB9uLZ parallelized",
-            "type": "ros",
-            "request": "launch",
-            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
-            "arguments": [
-                "config:=config/datasets/mp3d.json",
-                "parallelized:=1"
-            ]
-        },
-        {
             "name": "Default YmJkqBEsHnH parallelized",
             "type": "ros",
             "request": "launch",
             "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
             "arguments": [
-                "config:=config/datasets/mp3d.json",
-                "scene_id:=YmJkqBEsHnH",
+                "config:=${workspaceFolder}/config/datasets/mp3d.json",
                 "parallelized:=1"
+            ]
+        },
+        {
+            "name": "Default zsNo4HB9uLZ parallelized",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
+            "arguments": [
+                "config:=${workspaceFolder}/config/datasets/mp3d.json",
+                "scene_id:=zsNo4HB9uLZ",
+                "parallelized:=1",
+                "step_num:=10000"
             ]
         },
         {
@@ -184,24 +171,25 @@
             ]
         },
         {
-            "name": "Default zsNo4HB9uLZ with ros dataloader",
-            "type": "ros",
-            "request": "launch",
-            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
-            "arguments": [
-                "config:=config/datasets/mp3d.json",
-                "ros_dataloader:=1"
-            ]
-        },
-        {
             "name": "Default YmJkqBEsHnH with ros dataloader",
             "type": "ros",
             "request": "launch",
             "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
             "arguments": [
-                "config:=config/datasets/mp3d.json",
-                "scene_id:=YmJkqBEsHnH",
+                "config:=${workspaceFolder}/config/datasets/mp3d.json",
                 "ros_dataloader:=1"
+            ]
+        },
+        {
+            "name": "Default zsNo4HB9uLZ with ros dataloader",
+            "type": "ros",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/entry_points/habitat.launch",
+            "arguments": [
+                "config:=${workspaceFolder}/config/datasets/mp3d.json",
+                "ros_dataloader:=1",
+                "scene_id:=zsNo4HB9uLZ",
+                "step_num:=10000"
             ]
         }
     ]
