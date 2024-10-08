@@ -110,7 +110,7 @@ python scripts/entry_points/batch/eval_results_actions.py
 ## Citation
 
 ```
-@inproceedings{Kuang2023iros,
+@inproceedings{Kuang2024iros,
   title={Active Neural Mapping at Scale},
   author={Kuang, Zijia and Yan, Zike and Zhao, Hao and Zhou, Guyue and Zha, Hongbin},
   booktitle={IEEE/RSJ Intl. Conf. on Intelligent Robots and Systems (IROS)},
