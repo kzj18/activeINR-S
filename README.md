@@ -71,25 +71,25 @@ Copy config template from `config/.templates/user_config.json` to `config/user_c
 
 ### Single Scene
 
-1. To run Active Neural Mapping on the `Denmark` scene of `Gibson` dataset, run the following command.
+1. To run our method on the `Denmark` scene of `Gibson` dataset, run the following command.
 
     ```bash
     roslaunch active_inr_s habitat.launch
     ```
 
-2. To run Active Neural Mapping on the `Pablo` scene of `Gibson` dataset, run the following command.
+2. To run our method on the `Pablo` scene of `Gibson` dataset, run the following command.
 
     ```bash
     roslaunch active_inr_s habitat.launch scene_id:=Pablo
     ```
 
-3. To run Active Neural Mapping on the `zsNo4HB9uLZ` scene of `MP3D` dataset, run the following command.
+3. To run our method on the `zsNo4HB9uLZ` scene of `MP3D` dataset, run the following command.
 
     ```bash
     roslaunch active_inr_s habitat.launch config:=config/datasets/mp3d.json
     ```
 
-4. To run Active Neural Mapping on the `YmJkqBEsHnH` scene of `MP3D` dataset, run the following command.
+4. To run our method on the `YmJkqBEsHnH` scene of `MP3D` dataset, run the following command.
 
     ```bash
     roslaunch active_inr_s habitat.launch config:=config/datasets/mp3d.json scene_id:=YmJkqBEsHnH
@@ -105,4 +105,15 @@ python scripts/entry_points/batch/iros_run.py
 
 ```bash
 python scripts/entry_points/batch/eval_results_actions.py
+```
+
+## Citation
+
+```
+@inproceedings{Kuang2023iros,
+  title={Active Neural Mapping at Scale},
+  author={Kuang, Zijia and Yan, Zike and Zhao, Hao and Zhou, Guyue and Zha, Hongbin},
+  booktitle={IEEE/RSJ Intl. Conf. on Intelligent Robots and Systems (IROS)},
+  year={2024}
+}
 ```
