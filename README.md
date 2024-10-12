@@ -1,4 +1,4 @@
-# activeINR-S
+# Active Neural Mapping at Scale [IROS 2024]
 
 ## Installation
 
